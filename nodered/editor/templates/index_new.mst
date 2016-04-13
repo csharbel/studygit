@@ -1,0 +1,58 @@
+<html lang="en-us">
+	<head>
+		<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<title>ioGlue</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="shortcut icon" href="ioglue/img/favicon.png" type="image/x-icon"/>
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="vendor/jquery/css/smoothness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="vendor/vendor.css">
+		<link rel="stylesheet" href="red/style.min.css">
+		<link rel="stylesheet" href="ioglue/css/ioglue.css" />
+	
+	</head>
+	<body class="">
+		<header id="global-header">
+			<i class="fa fa-home home-btn"></i>
+			<span class='company-info'>
+				<img src='ioglue/img/logo/ioglue-logo.png' />
+			</span>
+			<div class="toolbar-ctrls pull-right">
+				<div class="btn-header" title="Settings">
+					<i class="fa fa-cog"></i>
+				</div>
+			</div>
+		</header>
+		<div id='main'>
+			<div id='right-panel'></div>
+			<div id="main-content">
+				<div id="loadingImg">
+					<h1><i class="fa fa-cog fa-spin"></i> Loading...</h1>
+				</div>
+				<div id="loadingError" style="display: none;">
+					<h4 style="margin-top:10px; display:block; text-align:left">
+						<i class="fa fa-warning txt-color-orangeDark"></i>
+						<i id="errorMessage"></i>
+					</h4>'
+				</div>
+				<div id="content-wrapper" /></div>
+			</div>
+		</div>
+		<script src="vendor/vendor.js"></script>
+		<script src="vendor/ace/ace.js"></script>
+		<script src="vendor/ace/ext-language_tools.js"></script>
+		<!--script src="{{ asset.red }}"></script-->
+		<script src="ioglue/js/util.js"></script>
+		<script src="ioglue/js/ext/jsviews/jsviews.1.0.0.70.js"></script>
+		<script src="ioglue/js/card-viewer/card-viewer.js"></script>
+		<script src="ioglue/js/index.js"></script>
+	</body>
+</html>
