@@ -205,14 +205,6 @@ module.exports = function(RED) {
                     this.error(errorMessage, msg);
                 }
             });
-            this.on("close", function() {
-                while(node.outstandingTimers.length > 0) {
-                    clearTimeout(node.outstandingTimers.pop())
-                }
-                while(node.outstandingIntervals.length > 0) {
-                    clearInterval(node.outstandingIntervals.pop())
-                }
-            })
         } catch(err) {
             // eg SyntaxError - which v8 doesn't include line number information
             // so we can't do better than this
